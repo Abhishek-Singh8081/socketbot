@@ -8,7 +8,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "http://127.0.0.1:5500",  // your client URL
+    origin: ["https://shiksharthackathon.netlify.app","http://localhost:5173"],  // your client URL
     methods: ["GET", "POST"],
     credentials: true
   }
